@@ -9,6 +9,9 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-masonry-component": "^6.2.1",
+    "react-masonry-css": "^1.0.14",
+    "react-render-image": "^2.0.0",
     "react-scripts": "3.4.1",
     "tsutils": "^3.17.1",
     "typescript": "^3.9.5"
