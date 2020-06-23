@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
-import icon from '../image/icon.png';
+import Icon from '../image/icon.png';
 import img1 from '../image/image_L_1.jpg';
 import img2 from '../image/image_M_1.jpg';
 import img3 from '../image/image_M_2.jpg';
@@ -11,11 +11,13 @@ import img7 from '../image/image_S_2.jpg';
 import img8 from '../image/image_S_3.jpg';
 import img9 from '../image/image_S_4.jpg';
 import img10 from '../image/image_S_5.jpg';
+import img11 from '../image/image_S_6.jpg';
+import img12 from '../image/image_S_7.jpg';
+import img13 from '../image/image_S_8.jpg';
+import img14 from '../image/image_S_9.jpg';
+import img15 from '../image/image_S_10.jpg';
 
-const imgsrc = [icon, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 const imgjson = {
-    "icon": [icon],
-    "img": [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10],
     "img_des": [
         {
             "Name": "img1",
@@ -87,29 +89,44 @@ const imgjson = {
             "size": "S",
             "title": "title",
         },
+        {
+            "Name": "img11",
+            "src": img11,
+            "des": "test_img",
+            "size": "S",
+            "title": "title",
+        },
+        {
+            "Name": "img12",
+            "src": img12,
+            "des": "test_img",
+            "size": "S",
+            "title": "title",
+        },
+        {
+            "Name": "img13",
+            "src": img13,
+            "des": "test_img",
+            "size": "S",
+            "title": "title",
+        },
+        {
+            "Name": "img14",
+            "src": img14,
+            "des": "test_img",
+            "size": "S",
+            "title": "title",
+        },
+        {
+            "Name": "img15",
+            "src": img15,
+            "des": "test_img",
+            "size": "S",
+            "title": "title",
+        },
     ]
     
 }
-
-const images = imgsrc.map(image => {
-    return (
-        <section class="item">
-            <a href="#">
-                <img key={image} src={image} classname="image"/>
-            </a>
-        </section>
-    );
-});
-
-const img_json = imgjson.img.map(image => {
-    return (
-        <section class="item">
-            <a href="#">
-                <img key={image} src={image} classname="image"/>
-            </a>
-        </section>
-    );
-});
 
 const img_block = imgjson.img_des.map((data, i) => {
     var style = "item-maindish"
@@ -127,6 +144,7 @@ const img_block = imgjson.img_des.map((data, i) => {
             style = "item-breaktime"
             break;
     }
+    style +=  (" item-" + data.size)
     
     return (
         <section class={"item " + style}>
@@ -139,20 +157,15 @@ const img_block = imgjson.img_des.map((data, i) => {
     );
 });
 
-class BoxRender extends Component {}
-
 const Box = (props) =>{
+    const masonryOptions = {
+        transitionDuration: 0,
+        columnWidth: 1,
+    };
     return (
-        <div class="body">
-            <Masonry
-                breakpointCols={4}
-                className="masonry-gird"
-                columnwidth="180"
-                columnClassName="masonry-column"
-            >
-                {img_block}
-            </Masonry>
-        </div>
+        <React.Fragment>
+            {img_block}
+        </React.Fragment>
     );
 }
 

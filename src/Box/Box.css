@@ -10,6 +10,7 @@
 .item .image {
     display: block;
     width: 100%;
+    height: 109px;
 }
 
 .item .category{
@@ -67,4 +68,20 @@
 .item-breaktime,
 .item-breaktime .category::before {
     border-color: #C1EFFF;
+}
+
+.item-M {
+    width: 364px;
+}
+
+.item-M .image {
+    height: 146px;;
+}
+
+.item-L {
+    width: 732px;
+}
+
+.item-L .image{
+    height: 403px;
 }

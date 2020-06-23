@@ -1,0 +1,47 @@
+.header {
+    padding: 25px 0;
+    border-bottom: none;
+    text-align: center;
+}
+
+.logo {
+    width: 136px;
+    height: 136px;
+    border-radius: 100%;
+    transform: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.nav{
+    margin: 53px auto 10px;
+}
+
+.nav-item {
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-item a {
+    display: inline-block;
+}
+
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin: 6px auto 0;
+    border-bottom: 1px solid #7C5119;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
