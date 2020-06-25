@@ -22,28 +22,28 @@ const imgjson = {
         {
             "Name": "img1",
             "src": img1,
-            "des": "test_img",
+            "des": "It was always dangerous to drive with him since he insisted the safety cones were a slalom course.",
             "size": "L",
             "title": "title",
         },
         {
             "Name": "img2",
             "src": img2,
-            "des": "test_img",
+            "des": "Someone I know recently combined Maple Syrup & buttered Popcorn thinking it would taste like caramel popcorn. It didn’t and they don’t recommend anyone else do it either.",
             "size": "M",
             "title": "title",
         },
         {
             "Name": "img3",
             "src": img3,
-            "des": "test_img",
+            "des": "We need to rent a room for our party.",
             "size": "M",
             "title": "title",
         },
         {
             "Name": "img4",
             "src": img4,
-            "des": "test_img",
+            "des": "For the 216th time, he said he would quit drinking soda after this last Coke.",
             "size": "M",
             "title": "title",
         },
@@ -149,9 +149,11 @@ const img_block = imgjson.img_des.map((data, i) => {
     return (
         <section class={"item " + style}>
             <a href="#">
-                <img key={data.src} src={data.src} className="image " />
+                <div class="img-hover-zoom">
+                    <img key={data.src} src={data.src} className="image " />
+                </div>
                 <div class="category">{data.title}</div>
-                <p class="description">{data.des} {data.size}</p>
+                <p class="description">{data.des}</p>
             </a>
         </section>
     );
