@@ -106,3 +106,7 @@
 .item-L .image{
     height: 403px;
 }
+.img-set {
+    float: right;
+    width: 85%;
+}

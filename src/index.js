@@ -17,11 +17,12 @@ const masonryOptions = {
 
 ReactDOM.render(
   <React.StrictMode>
+    <Navi />
     <Masonry
+      className={'img-set'}
         elementType={'section'}
         options={masonryOptions}
     >
-      <Navi />
       <Box />
     </Masonry>
   </React.StrictMode>,
