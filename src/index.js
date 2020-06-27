@@ -1,31 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Masonry from 'react-masonry-component';
 import './index.css';
-import App from './App';
-import Box from './Box/box.js';
-import Navi from './Box/navbar.js';
+import App from './App.js';
 import './Box/Box.css';
 import './Box/navbar.css';
 import * as serviceWorker from './serviceWorker';
 
-
-const masonryOptions = {
-  transitionDuration: 0,
-  columnWidth: 1,
-};
+/*ReactDOM.render(
+  //<Box />, document.getElementById('root')
+  <HashRouter>
+    <Route path='/' component={Box} />
+  </HashRouter>
+);*/
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Masonry
-        elementType={'section'}
-        options={masonryOptions}
-    >
-      <Navi />
-      <Box />
-    </Masonry>
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App />, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

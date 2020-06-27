@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
+import Navi from './navbar.js';
 import Icon from '../image/icon.png';
 import img1 from '../image/image_L_1.jpg';
 import img2 from '../image/image_M_1.jpg';
@@ -148,12 +149,12 @@ const img_block = imgjson.img_des.map((data, i) => {
     
     return (
         <section class={"item " + style}>
-            <a href="#">
+            <a href="Name">
                 <div class="img-hover-zoom">
                     <img key={data.src} src={data.src} className="image " />
                 </div>
                 <div class="category">{data.title}</div>
-                <p class="description">{data.des}</p>
+                <p class="description">{data.des} {data.size}</p>
             </a>
         </section>
     );
@@ -166,7 +167,14 @@ const Box = (props) =>{
     };
     return (
         <React.Fragment>
-            {img_block}
+            <Navi />
+            <Masonry
+                className={'img-set'}
+                elementType={'section'}
+                options={masonryOptions}
+            >  
+                    {img_block}
+            </Masonry>
         </React.Fragment>
     );
 }

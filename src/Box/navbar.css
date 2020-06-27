@@ -1,7 +1,14 @@
 .header {
+    position: fixed;
     padding: 25px 0;
     border-bottom: none;
     text-align: center;
+    width: 15%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .logo {
@@ -23,6 +30,7 @@
 
 .nav-item {
     margin-top: 20px;
+    padding-right: 25px;
     text-align: center;
     letter-spacing: 1px;
     font-weight: bold;
