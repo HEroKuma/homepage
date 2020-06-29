@@ -2,6 +2,7 @@
 
 html {
     min-height: 1600px;
+    min-width: 1600px;
     height: 100%;
     width: 100%;
     font-size: 62.5%;
@@ -33,6 +34,7 @@ body{
 
 .solid1 {
     width: 50%;
+    margin-top: 7%;
     margin-left: 0px;
 }
 
@@ -42,10 +44,14 @@ body{
 }
 
 .head {
-    width: 70%;
+    display: flex;
+    width: 100%;
     /* background-color: #6cf; */
-    height: 10%;
     font-family: 'Open Sans', sans-serif;
+}
+
+.head-box {
+    width: 60%;
 }
 
 .head .name {
@@ -59,8 +65,31 @@ body{
     padding-left: 3px;
 }
 
+.icon {
+    position: absolute;
+    left: 55%;
+    display: block;
+    width: 15%;
+    margin-top: 40px;
+    filter: invert(100%) grayscale(100%);
+    background-color: #111;
+    overflow: hidden;
+    background-size: 110%;
+    padding: 8px;
+}
+
+.icon-box {
+    background-color: mintcream;
+}
+
+.head:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .skill {
-    height: %;
+    height: 20%;
     width: 70%;
     /* background-color: lightblue; */
 }
@@ -75,6 +104,7 @@ body{
     height: 40%;
     width: 33.33%;
     padding-right: 20px;
+    margin-bottom: 40px;
     float: left;
     font-family: 'Open Sans', sans-serif;
     /* background-color: lightpink; */
@@ -82,6 +112,18 @@ body{
 
 .skill_name {
     font-weight: bold;
+}
+
+.skill_name::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(226, 238, 232);
 }
 
 .arrow:after {
@@ -104,6 +146,36 @@ body{
     content: "";
     display: table;
     clear: both;
+}
+
+.skill-bar {
+    width: 100%;
+    padding-top: 0.2em;
+    background-color:white;
+}
+
+#python {
+    width: 80%;
+}
+
+#C\&CPP {
+    width: 50%;
+}
+
+#Deep\ Learning {
+    width: 70%;
+}
+
+#Machine\ Learning {
+    width: 50%;
+}
+
+#html\ \&\ css {
+    width: 20%;
+}
+
+#react {
+    width: 20%;
 }
 
 .education {

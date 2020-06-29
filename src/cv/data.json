@@ -13,7 +13,7 @@
             "skills": ["Deep Learning, ", "Algorithm, ", "Web Scraping, ", "Django"]
         },
         {
-            "name": "C/C++",
+            "name": "C&CPP",
             "year": 4,
             "bar": 50,
             "skills": ["Algorithm"]
@@ -67,7 +67,7 @@
             "github": "github.com/HEroKuma"
         }
     ],
-    "interessen": ["Music (Hard Rock, Metal), Gaming, Traveling, Math, Physical, Public Science, Philosophy"],
+    "interessen": ["Music, Gaming, Traveling, Math, Physical, Public Science, Philosophy"],
     "language": [
         {
             "type": "Chinese",
