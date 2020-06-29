@@ -1,7 +1,7 @@
 {
     "header": [
         {
-            "name": "Chang Li Wei",
+            "name": "CHANG LI WEI",
             "job": "Software Engineer"
         }
     ],
@@ -10,7 +10,7 @@
             "name": "python",
             "year": 5,
             "bar": 80,
-            "skills": ["Deep Learning", "Algorithm", "Web Scraping", "Django framework"]
+            "skills": ["Deep Learning, ", "Algorithm, ", "Web Scraping, ", "Django"]
         },
         {
             "name": "C/C++",
@@ -22,13 +22,13 @@
             "name": "Deep Learning",
             "year": 3,
             "bar": 70,
-            "skills": ["Image Classification", "Object Detxction", "Optical Character Recognition", "Audio Processing"]
+            "skills": ["Image Classification, ", "Object Detection, ", "OCR, ", "Audio Processing"]
         },
         {
             "name": "Machine Learning",
             "year": 1,
             "bar": 50,
-            "skills": ["Visualization", "Preprocessing", "Statistics"]
+            "skills": ["Visualization, ", "Preprocessing, ", "Statistics"]
         },
         {
             "name": "html & css",
@@ -46,15 +46,19 @@
     "education": [
         {
             "name": "National Sun Yat-sen University",
-            "education": "Bachelor"
+            "education": "Bachelor",
+            "specialization": "Computer Science"
+            
         },
         {
             "name": "National Tsing Hua University",
-            "education": "Master"
+            "education": "Master",
+            "specialization": "Artificial Intelligence"
         },
         {
             "name": "University of Tsukuba",
-            "education": "Short exchange"
+            "education": "Short exchange",
+            "specializaion": "Computer Science"
         }
     ],
     "profile": [
@@ -63,7 +67,7 @@
             "github": "github.com/HEroKuma"
         }
     ],
-    "interessen": ["Music(Hard Rock, Metal)", "Gaming", "Traveling", "Math", "Physical", "Public Science", "Philosophy"],
+    "interessen": ["Music (Hard Rock, Metal), Gaming, Traveling, Math, Physical, Public Science, Philosophy"],
     "language": [
         {
             "type": "Chinese",

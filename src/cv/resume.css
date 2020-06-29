@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+body{
+    margin: 0px auto;
+    display: flex;
+    height: 100%;
+    width: 75%;
+    background-color: #333;
+    color: #EEE;
+    padding: 40px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.solid1 {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.solid2 {
+    width: 80%;
+    margin-left: 0px;
+}
+
+.head {
+    width: 70%;
+    /* background-color: #6cf; */
+    height: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.head .name {
+    font-size: 2em;
+    margin-bottom: -10px;
+}
+
+.head .job {
+    font-size: 0.9em;
+    margin-top: 0px;
+    padding-left: 3px;
+}
+
+.skill {
+    height: %;
+    width: 70%;
+    /* background-color: lightblue; */
+}
+
+.skill_list {
+    height: 100%;
+    /* background-color: lightcoral; */
+    font-size: 0.8em;
+}
+
+.skill_box {
+    height: 40%;
+    width: 33.33%;
+    padding-right: 20px;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: lightpink; */
+}
+
+.skill_name {
+    font-weight: bold;
+}
+
+.arrow:after {
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid linen;
+    border-top: 0.2em solid linen;
+    transform: rotate(45deg);
+    margin-bottom: 0.1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.skill:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.education {
+    height: 15%;
+    width: 47%;
+    /* background-color: lawngreen; */
+}
+
+.education div {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 30%;
+    margin-bottom: 40px;
+}
+
+.language {
+    width: 50%;
+    height: 15%;
+    /* background-color: khaki; */
+}
+
+.language .language-box{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    display: flex;
+    line-height: 0px;
+    margin-top: -10px;
+}
+
+.lang {
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+
+.level {
+    float: left;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.language-box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2 {
+    height: 20%;
+    display: flex;
+    /* background-color: linen; */
+}
+
+.row2 .language{
+    height: 100%;
+    float: left;
+}
+
+.row2 .education{
+    height: 100%;
+    float: left;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile {
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    height: 15%;
+    line-height: 70%;
+    /* background-color: lawngreen; */
+}
+
+.interests {
+    font-family: 'Open Sans', sans-serif;
+    height: 10%;
+    line-height: 100%;
+    /* background-color: lightblue; */
+}
+
+.mail-icon {
+    margin-top: 4px;
+    margin-right: 8px;
+    float: left;
+    background-color: mintcream;
+    overflow: hidden;
+}
+
+.mail-icon:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.github-icon {
+    margin-top: 4px;
+    margin-right: 8px;
+    float: left;
+    background-color: mintcream;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.github-icon:after {
+    content: "";
+    display: table;
+    clear: both;
+}

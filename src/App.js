@@ -11,8 +11,8 @@ const App = () => {
   return (
     <HashRouter>
       <Switch>
-        <Route exact path='/' component={Box}/>
-        <Route path='/resume' component={resume}/>
+        <Route exact path='/' component={resume}/>
+        <Route path='/resume' component={Box}/>
       </Switch>
     </HashRouter>
   )
