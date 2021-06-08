@@ -14,6 +14,9 @@ const profile_div = data.profile.map((item) => {
                 <img class="github-icon" src={github_icon} />
                 <p>{item.github}</p>
             </div>
+            <div class="kaggle">
+                <p>https://www.kaggle.com/herokuma</p>
+            </div>
         </div>
     )
 });
